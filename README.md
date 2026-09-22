@@ -45,16 +45,12 @@ I also examined the effect of replacing average pooling with convolution. Under 
 
 The implementation was adapted from the [PyTorch CIFAR repository by kuangliu](https://github.com/kuangliu/pytorch-cifar) and modified to follow the CIFAR-10 ResNet architecture and training setup described in the original paper.
 
-Key modifications and settings include:
+Key modifications include:
 
-- CIFAR-style ResNet20, ResNet32, ResNet44, and ResNet56 architectures
-- Residual shortcut connection **Option A**
-- 3×3 convolutional layers with 16, 32, and 64 filters
-- SGD with momentum of 0.9
-- Weight decay of 0.0001
-- Initial learning rate of 0.1 with scheduled reductions
-- Global average pooling
-- CIFAR-10 data augmentation
+- Adapted the baseline architecture to implement ResNet20, ResNet32, ResNet44, and ResNet56
+- Modified shortcut connections to follow the original CIFAR-10 ResNet specification
+- Implemented the learning-rate schedule and optimization settings described in the paper
+- Applied global average pooling and CIFAR-10 data augmentation
 
 ## Report
 
